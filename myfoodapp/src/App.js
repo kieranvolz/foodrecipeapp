@@ -4,6 +4,12 @@ import React, { useState } from "react";
 import Axios from "https://cdn.skypack.dev/axios@0.27.2";  
 import { v4 as uuidv4 } from "https://cdn.skypack.dev/uuid@8.3.2"; 
 
+
+
+console.log(process.env.REACT_APP_ID);
+console.log(process.env.REACT_APP_KEY);
+
+
 const Alert = ({ alert }) => {
   return (
     <div className="alert">
@@ -56,10 +62,7 @@ function App() {
   const [alert, setAlert] = useState("");
 
 
-  const REACT_APP_ID = "4e9f05eb";
-  const REACT_APP_KEY = "9b904d703fa0d46a88ce1ac63f29f498";
-
-  const url = `https://api.edamam.com/search?q=${query}&app_id=${REACT_APP_ID}&app_key=${REACT_APP_KEY}`;
+  const url = `https://api.edamam.com/search?q=${query}&app_id=${process.env.REACT_APP_ID}&app_key=${process.env.REACT_APP_KEY}`;
 
   const getData = async () => {
     if (query !== "") {
