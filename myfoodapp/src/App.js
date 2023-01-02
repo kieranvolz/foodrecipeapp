@@ -1,18 +1,8 @@
 import './App.css';
 
 import React, { useState } from "react";
-// import "./App.css";
 import Axios from "https://cdn.skypack.dev/axios@0.27.2";  
 import { v4 as uuidv4 } from "https://cdn.skypack.dev/uuid@8.3.2"; 
-//unique id generator from not package
-//import ReactDOM from "https://cdn.skypack.dev/react-dom@17.0.1";
-
-
-// import Recipe from "./components/Recipe";
-// import Alert from "./components/Alert";
-
-  
-// import React from "https://cdn.skypack.dev/react@17.0.1";
 
 const Alert = ({ alert }) => {
   return (
