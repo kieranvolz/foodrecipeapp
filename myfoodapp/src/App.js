@@ -55,6 +55,7 @@ function App() {
   const [recipes, setRecipes] = useState([]);
   const [alert, setAlert] = useState("");
 
+
   const REACT_APP_ID = "4e9f05eb";
   const REACT_APP_KEY = "9b904d703fa0d46a88ce1ac63f29f498";
 
