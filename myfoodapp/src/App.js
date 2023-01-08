@@ -8,8 +8,6 @@ import { v4 as uuidv4 } from "https://cdn.skypack.dev/uuid@8.3.2";
 
 
 
-console.log(process.env.REACT_APP_ID);
-console.log(process.env.REACT_APP_KEY);
 
 
 const Alert = ({ alert }) => {
