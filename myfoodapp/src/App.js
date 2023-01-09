@@ -1,8 +1,8 @@
 import './App.css';
 
 import React, { useState } from "react";
-import Axios from "https://cdn.skypack.dev/axios@0.27.2";  
-// import Axios from 'Axios';
+// import axios from "https://cdn.skypack.dev/axios@0.27.2";  
+import axios from 'axios';
 
 import { v4 as uuidv4 } from "https://cdn.skypack.dev/uuid@8.3.2"; 
 
@@ -66,7 +66,7 @@ function App() {
 
   const getData = async () => {
     if (query !== "") {
-      const result = await Axios.get(url);
+      const result = await axios.get(url);
       if (!result.data.more) {
         return setAlert("No food with such name");
       }
